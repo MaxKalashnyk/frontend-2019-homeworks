@@ -94,10 +94,7 @@ let renderPage = () => {
             /* finding match of cat with the same id as in clicked link */
 
             let currentCat = cats.find((cat) => {
-                if (cat.id === currentTargetDataId) {
-					return true;
-                }
-
+				return cat.id === currentTargetDataId;
             });
 			
 			if (currentCat) {
